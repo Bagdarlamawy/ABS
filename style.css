@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  vertical-align: bottom;
+  text-decoration: none;
+  box-sizing: border-box;
+/*  font-family: 'Arial', sans-serif;*/
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+.kolenke{
+  background: rgba(0, 0, 0, .3);/*#6665 */
+}
+.section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background:  #666 url(../img/header.png) no-repeat;
+  background-position: right;
+  background-size: cover;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section h2{
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1em;
+}
+h2{
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2em;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+.taqyryby {
+  position: absolute;
+  left: 2rem;
+  top: 14rem;
+}
+.taqyryby h1 {
+  font-size: 1.6rem;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.a{
+  position: absolute;  
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: #53a2f7;
+}
+.section h2 span
+{
+  color: #4978ff;
+}
+.svg{
+  position: absolute;
+  bottom: -.3rem;
+}
+.svgsyret{
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: ;
+  right: 1rem;
+  z-index: 1;
+}
+.imgsvg{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0; 
+}
+
+dt {
+  position: relative;
+  width: 420px;
+  color: #222;
+  font-size: 1.2rem;
+  transform: translate(-58%, 7rem) rotatez(-90deg);
+  text-transform: uppercase;
+  font-weight: bold;
+/*  text-decoration: 1px underline wavy #53a2f7;*/
+}
+.svgmaqala{
+  width: 5rem;
+  margin: 1rem;
+}
+.bagan{
+  background: #fff;
+  margin: ;
+  padding:10rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bagan .myqabasy{
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.jazba-orisi{
+  max-width: 800px;
+  margin: 0 auto;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: .6rem;
+}
+p{
+  position: relative;
+  font-weight: 300;
+  padding:1rem;
+}
+
+.maqala{
+  position: relative;
+  padding: .6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+.maqala .jazba{
+  margin: 0 auto;
+  background: #fff;
+  padding: .6rem;
+  border-radius: 1rem;
+  max-width: 20rem;
+  color: #000;
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .5);
+  transition: 1s;
+}
+.maqala .jazba .keskin{
+  margin: 5px;
+}
+.maqala .jazba .keskin img{
+  max-width: 14rem;
+}
+.maqala .jazba h2{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*.ast-matin{
+  font-size: 1.4rem;
+}
+.ast-matin::before{
+   content: '';
+   position: absolute;
+   left: 2rem;
+   top: 7rem;
+   background-color: #53a2f7;
+   height: .2rem;
+   box-sizing: border-box;
+   width: 3rem;
+}*/
+
+
+/* Мобилді қосымшаға биімдеу*/
+@media (max-width: 992px){
+  .section{
+    background-position: right;
+    background-size: cover;
+  }
+  .section h2{
+    font-size: 1.2rem;
+  }
+  .bagan{
+    padding: 100px 50px 50px 50px;
+  }
+  h3{
+    font-size: 2rem;
+    line-height: 1em;
+  }
+  .maqala{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .maqala .jazba{
+    width: 100%;
+  }
+}
+
+@media (min-width: 860px) {
+.svgsyret{
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  top: 7rem;
+  right: 1rem;
+  z-index: 1;
+}
+}
+@media (max-width: 859px) {
+.svgsyret{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 5rem;
+  right: 1rem;
+  z-index: 1;
+}
+}
+@media (max-width: 640px) {
+.svgsyret{
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  top: 3rem;
+  right: 1rem;
+  z-index: 1;
+}
+}
+@media (max-width: 480px) {
+.svgsyret{
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  top: 2rem;
+  right: .3rem;
+  z-index: 1;
+}
+}

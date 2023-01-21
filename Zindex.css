@@ -1,0 +1,152 @@
+.kenistigi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.birAgynda {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.ayqumu {
+    -webkit-perspective: 64rem;
+            perspective: 64rem;
+}
+/* 3 қабаттты смартфон */
+.qyrynan_3 {
+  background-color: #fff;
+  width: 10rem;
+  height: 20rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: jyljymaly .5s ease-in-out 1s forwards;
+            animation: jyljymaly .5s ease-in-out 1s forwards;
+  position: absolute;
+}
+.qyrynan_2 {
+  background-color: #fff;
+  width: 8rem;
+  height: 18rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: jyljymaly .5s ease-in-out 1s forwards;
+            animation: jyljymaly .5s ease-in-out 1s forwards;
+  position: absolute;
+}
+.qyrynan {
+  background-color: #fff;
+  width: 6rem;
+  height: 16rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: jyljymaly .5s ease-in-out 1s forwards;
+            animation: jyljymaly .5s ease-in-out 1s forwards;
+  position: absolute;
+}
+.qabat{
+    position: absolute;
+    left:-2rem;
+    top: 2rem;
+    bottom: 0;
+    transition: .5s;
+}
+.qabat_2{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    bottom: 0;
+    transition: .5s;
+}
+.qabat_3{
+    position: absolute;
+    left: 4rem;
+    top: 0;
+    bottom: 0;
+    transition: .5s;
+}
+.camera-orisi {
+  position: absolute;
+  width: 4rem;
+  height: 8px;
+  background-color: #222;
+  z-index: 2;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.camera {
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 7.3vmin;
+}
+@-webkit-keyframes jyljymaly {
+    0% {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(30deg);
+                transform: rotateY(30deg);
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    .kenistigi {
+      -webkit-transform: scale(.85);
+              transform: scale(.85);
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .kenistigi {
+      -webkit-transform: scale(.75);
+              transform: scale(.75);
+    }
+  }
+
+  @media screen and (max-width: 775px) {
+    .kenistigi {
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse;
+      -webkit-box-align: inherit;
+          -ms-flex-align: inherit;
+              align-items: inherit;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .kenistigi {
+        -webkit-transform: scale(.6);
+                transform: scale(.6);
+      }
+  }

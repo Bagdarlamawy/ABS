@@ -1,0 +1,112 @@
+/* Ақпаратттық қойынды */
+img{
+  max-width: 100%;
+}
+.qoiyndy{
+  width: 96%;
+  background: #fff;
+  margin: ;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.qoiyndy .taq{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.qoi-myqabasy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.qoi-myqabasy .qoi-bagan{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 10%;
+  height: 300px;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+  padding: 10px 10px 10px 5px;
+  left: .6rem;
+  position: relative;
+}
+.qoi-myqabasy .qoi-bagan label{
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#qoi-sanaty:checked ~ .qoi-bagan label.qoi-sanaty,
+#qoi-sanaty_2:checked ~ .qoi-bagan label.qoi-sanaty_2,
+#qoi-sanaty_3:checked ~ .qoi-bagan label.qoi-sanaty_3,
+#qoi-sanaty_4:checked ~ .qoi-bagan label.qoi-sanaty_4,
+#qoi-sanaty_5:checked ~ .qoi-bagan label.qoi-sanaty_5{
+  color: #fff;
+}
+.qoi-myqabasy .qoi-bagan label:hover{
+  color: #6d50e2;
+}
+.qoi-myqabasy .syrgyma{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #53a2f7;
+  transition: all 0.4s ease;
+}
+#qoi-sanaty:checked ~ .qoi-bagan .syrgyma{
+  top: 0;
+}
+#qoi-sanaty_2:checked ~ .qoi-bagan .syrgyma{
+  top: 60px;
+}
+#qoi-sanaty_3:checked ~ .qoi-bagan .syrgyma{
+  top: 120px;
+}
+#qoi-sanaty_4:checked ~ .qoi-bagan .syrgyma{
+  top: 180px;
+}
+#qoi-sanaty_5:checked ~ .qoi-bagan .syrgyma{
+  top: 240px;
+}
+.qoi-myqabasy .qoi-orisi{
+  width: 80%;
+  height: 100%;
+}
+.qoi-myqabasy .qoi-mazmuny{
+  display: none;
+}
+.qoi-myqabasy .qoi-mazmuny .qoi-taq{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.qoi-myqabasy .qoi-mazmuny p{
+  text-align: justify;
+}
+.qoi-myqabasy .qoi-orisi .qoi-sanaty{
+  display: block;
+}
+#qoi-sanaty:checked ~ .qoi-orisi .qoi-sanaty,
+#qoi-sanaty_2:checked ~ .qoi-orisi .qoi-sanaty_2,
+#qoi-sanaty_3:checked ~ .qoi-orisi .qoi-sanaty_3,
+#qoi-sanaty_4:checked ~ .qoi-orisi .qoi-sanaty_4,
+#qoi-sanaty_5:checked ~ .qoi-orisi .qoi-sanaty_5{
+  display: block;
+}
+#qoi-sanaty_2:checked ~ .qoi-orisi .qoi-sanaty,
+#qoi-sanaty_3:checked ~ .qoi-orisi .qoi-sanaty,
+#qoi-sanaty_4:checked ~ .qoi-orisi .qoi-sanaty,
+#qoi-sanaty_5:checked ~ .qoi-orisi .qoi-sanaty{
+  display: none;
+}
+.qoi-myqabasy input{
+  display: none;
+}

@@ -1,0 +1,85 @@
+.orister{
+   max-width: 1170px;
+   margin:auto;
+}
+.qatar{
+   display: flex;
+   flex-wrap: wrap;
+}
+ul{
+   list-style: none;
+}
+.kilem{
+   background-color: #24262b;
+   padding: 70px 0;
+}
+.footer-bagan{
+   width: 20%;
+   padding: 0 1rem;
+}
+.footer-bagan h4{
+   font-size: 1rem;
+   color: #fff;
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+   font-weight: 700;
+   position: relative;
+}
+.footer-bagan h4::before{
+   content: '';
+   position: absolute;
+   left: 3px;
+   bottom: -8px;
+   background-color: #53a2f7;
+   height: 2px;
+   box-sizing: border-box;
+   width: 6rem;
+}
+.footer-bagan ul li:not(:last-child){
+   margin-bottom: 5px;
+}
+.footer-bagan ul li a{
+   font-size: 1rem;
+   text-transform: capitalize;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbb;
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-bagan ul li a:hover{
+   color: #fff;
+   padding-left: 8px;
+}
+.footer-bagan .alymetttik-jeli a{
+   display: inline-block;
+   height: 2rem;
+   width: 2rem;
+   background-color: #6665;
+   margin:0 10px 10px 0;
+   text-align: center;
+   line-height: 2rem;
+   border-radius: 50%;
+   color: #fff;
+   transition: all 0.5s ease;
+}
+.footer-bagan .alymetttik-jeli a:hover{
+   color: #fff5;
+   background-color: #fff;
+}
+hr{
+  margin: 2rem;
+}
+
+@media(max-width: 767px){
+      .footer-bagan{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width: 574px){
+      .footer-bagan{
+        width: 100%;
+    }
+}
