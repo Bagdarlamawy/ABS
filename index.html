@@ -360,35 +360,7 @@
       <h3 style="color: #fff; font-size: 1rem; padding: 1rem;">ABS DESIGN</h3>
   </footer>
 
-  <script type="text/javascript">
-     // Ұялы құрылғыға бейімделгіш мәзір
-let tyimeMaziri = document.querySelector('.tyimeMaziri');
-let sanattar = document.querySelector('.sanattar');
-    tyimeMaziri.addEventListener('click', () => {
-          sanattar.classList.toggle('belsendi');
-          tyimeMaziri.classList.toggle('belsendi');
-        })
- // Мәзірдің # таңбасмен өрістерді шарлауы 
-let section = document.querySelectorAll("section");
-let menu = document.querySelectorAll("header .mazir a");
-
-window.onscroll = () => {
-  section.forEach((i) => {
-    let top = window.scrollY;
-    let offset = i.offsetTop - 150;
-    let height = i.offsetHeight;
-    let id = i.getAttribute("id");
-
-    if (top >= offset && top < offset + height) {
-      menu.forEach((link) => {
-        link.classList.remove("agymdagy");
-        document
-          .querySelector("header .mazir a[href*=" + id + "]")
-          .classList.add("agymdagy");
-      });
-    }
-  });
-};    
-  </script>
+  <script src="menu.js"></script>
+  <script src="scrolll.js"></script>
 </body>
-</html>
+</html> 
